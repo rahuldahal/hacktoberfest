@@ -7,11 +7,11 @@ int main() {
     cout << "Enter two numbers: ";
     cin >> num1 >> num2;
 
-    // Step 2: Performing Addition
+    // Step 2: Performing subtraction
     int sum = num1 + num2;
 
     // Step 3: Displaying the Result
-    cout << "The sum is: " << sum << endl;
+    cout << "The sum  is: " << sum << endl;
 
     return 0;
 }
