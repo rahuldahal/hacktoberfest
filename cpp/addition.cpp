@@ -7,7 +7,7 @@ int main() {
     cout << "Enter two numbers: ";
     cin >> num1 >> num2;
 
-    // Step 2: Performing subtraction
+    // Step 2: Performing addition
     int sum = num1 + num2;
 
     // Step 3: Displaying the Result
