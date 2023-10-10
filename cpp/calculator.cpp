@@ -1,11 +1,17 @@
 #include <iostream>
+#include <bits/stdc++.h>
 
 int main() {
     char operation;
     double num1, num2;
 
     // Input: Ask user for operation and two numbers
-    std::cout << "Enter an operation (+, -, *, /): ";
+    std::cout << "Enter an operation (+, -, *, /,^): "<<std :: endl;
+    std :: cout << "+ --> Adds two numbers"<<std :: endl;
+    std :: cout << "- --> Subtracts the second number from the first number"<<std :: endl;
+    std :: cout << "* --> Multiplies the two numbers"<<std :: endl;
+    std :: cout << "/ --> Divides num1 by num2 and gives the quotient"<<std :: endl;
+    std :: cout << "^ --> Calculates num1 to the power num2"<<std :: endl;
     std::cin >> operation;
 
     std::cout << "Enter two numbers: ";
@@ -31,6 +37,10 @@ int main() {
                 std::cout << "Error: Division by zero is not allowed.";
                 return 1; // Exit with error code 1
             }
+            break;
+        case '^':
+        // Gives the remainder when num1 is divided by num2
+            result = pow(num1,num2);
             break;
         default:
             std::cout << "Error: Invalid operation.";
