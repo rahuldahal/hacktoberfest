@@ -8,10 +8,13 @@ int main() {
     cin >> num1 >> num2;
 
     // Step 2: Performing Division
-    int div = num1/num2;
-
-    // Step 3: Displaying the Result
-    cout << "The Div is: " << div << endl;
-
+    if (num2 == 0){
+        cout << "Denominator can not be zero.";
+    } else {
+        int div = num1/num2;
+        
+    	// Step 3: Displaying the Result
+        cout << "The Div is: " << div << endl;
+    }
     return 0;
 }
